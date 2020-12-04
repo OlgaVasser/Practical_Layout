@@ -1,0 +1,353 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 570px);
+  padding-right: calc(50% - 570px);
+}
+
+.main_menu {
+  background-color: #222222;
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  align-items: center;
+}
+
+.menu_search {
+  margin-left: 41px;
+}
+
+.menu_account {
+  margin-left: 34px;
+  margin-right: 33px;
+}
+
+.main_view {
+  background-color: rgba(113, 103, 105, 0.08);
+  display: flex;
+  width: 100%;
+  height: 764px;
+}
+.main_image {
+  width: 50%;
+  padding-left: calc(50% - 800px);
+}
+.main_info {
+  width: 50%;
+  background-color: #f1e4e6;
+  display: flex;
+  align-items: center;
+  padding-right: calc(50% - 800px);
+}
+
+.pink_block {
+  margin-left: 64px;
+  margin-right: 16px;
+  height: 92px;
+  width: 12px;
+  background-color: #f16d7f;
+}
+.main_header {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 58px;
+  color: #222222;
+}
+
+.main_paragraph {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  color: #222222;
+}
+.pink_text {
+  color: #f16d7f;
+}
+
+.popular_deal {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 63px;
+}
+
+.deals_card {
+  position: relative;
+}
+
+.deals_card:not(:last-child) {
+  margin-right: 30px;
+}
+
+.deals_image {
+  width: 100%;
+}
+
+.deals_content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.deals_paragraph {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.deals_header {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  color: #f16d7f;
+}
+
+.big_deal {
+  margin-top: 30px;
+  position: relative;
+}
+
+.big_deal_image {
+  width: 100%;
+}
+
+.gallery_introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 97px;
+  margin-bottom: 48px;
+}
+
+.gallery_heading {
+  margin-bottom: 6px;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  color: #222222;
+}
+
+.gallery_paragraph {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #9f9f9f;
+}
+
+.main_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.card_main_gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background: #f8f8f8;
+  margin-bottom: 30px;
+  width: 360px;
+}
+
+.image_main_gallery {
+  width: 100%;
+}
+
+.heading_main_gallery {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #000000;
+  margin-top: 25px;
+  margin-left: 16px;
+}
+.paragraph_main_gallery {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #5d5d5d;
+  margin-top: 13px;
+  margin-left: 18px;
+  margin: 13px 29px 18px 16px;
+}
+
+.price_main_gallery {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f16d7f;
+  margin-left: 16px;
+  margin-bottom: 20px;
+}
+
+.allProducts_button {
+  text-align: center;
+  height: 47px;
+  margin-bottom: 95px;
+  margin-top: 48px;
+}
+
+.allProducts_link {
+  border: 1px solid #ff6a6a;
+  padding: 14px 38px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #f26376;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #222224;
+}
+
+.footer_column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 104px;
+  margin-bottom: 104px;
+}
+
+.footer_heading {
+  margin-top: 20px;
+  margin-bottom: 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #fbfbfb;
+}
+
+.footer_paragraph {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #fbfbfb;
+}
+
+.footer_subscribe {
+  background-image: url("img/img_subscribe.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 448px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscribe_column {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe_foto {
+  margin-bottom: 40px;
+}
+.subscribe_feedback {
+  width: 360px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe_heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  text-align: center;
+  color: #222224;
+}
+.subscribe_paragraph {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #222224;
+}
+
+.subscribe_button {
+  margin-top: 32px;
+  display: flex;
+  height: 50px;
+  width: 350px;
+}
+
+.subscribe_email_input {
+  background: #e1e1e1;
+  border: 0;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  padding: 20px;
+  width: 75%;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222224;
+  opacity: 0.67;
+}
+
+.subscribe_email_button {
+  background-color: #f16d7f;
+  border: 0;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.footer_copyright {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.text_copyright {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #fbfbfb;
+}
+
+.footer_social_media {
+  display: flex;
+  justify-content: space-between;
+}
+
+.image_media {
+  margin-left: 7px;
+}
