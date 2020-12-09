@@ -37,10 +37,14 @@ a {
   width: 100%;
   height: 764px;
 }
+.main_view:hover {
+  filter: brightness(50%);
+}
 .main_image {
   width: 50%;
   padding-left: calc(50% - 800px);
 }
+
 .main_info {
   width: 50%;
   background-color: #f1e4e6;
@@ -165,14 +169,42 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   background: #f8f8f8;
-  margin-bottom: 30px;
   width: 360px;
+  position: relative;
+}
+.card_main_gallery:hover .add_to_cart {
+  display: flex;
+}
+.card_main_gallery:hover .image_main_gallery {
+  filter: brightness(50%);
+}
+
+.margin_bottom_card {
+  margin-bottom: 30px;
 }
 
 .image_main_gallery {
   width: 100%;
+}
+
+.add_to_cart {
+  position: absolute;
+  width: 138px;
+  height: 43px;
+  top: 188px;
+  left: 111px;
+  border: 1px solid #ffffff;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+}
+.image_add_to_cart {
+  margin-right: 10px;
 }
 
 .heading_main_gallery {
@@ -189,9 +221,7 @@ a {
   font-size: 14px;
   line-height: 17px;
   color: #5d5d5d;
-  margin-top: 13px;
-  margin-left: 18px;
-  margin: 13px 29px 18px 16px;
+  margin: 15px 16px;
 }
 
 .price_main_gallery {
@@ -217,6 +247,10 @@ a {
   font-size: 16px;
   line-height: 19px;
   color: #f26376;
+}
+.allProducts_link:hover {
+  background-color: #f16d7f;
+  color: #fff;
 }
 
 .footer {
@@ -316,6 +350,7 @@ a {
   line-height: 17px;
   color: #222224;
   opacity: 0.67;
+  outline: none;
 }
 
 .subscribe_email_button {
@@ -329,6 +364,7 @@ a {
   line-height: 17px;
   text-align: center;
   color: #ffffff;
+  outline: none;
 }
 
 .footer_copyright {
@@ -346,8 +382,152 @@ a {
 .footer_social_media {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.image_media {
+.social_media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 32px;
+  background-color: white;
   margin-left: 7px;
+}
+
+.social_media:hover {
+  background-color: #f16d7f;
+  color: white;
+}
+
+.catalog_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f8f3f4;
+  height: 148px;
+}
+.heading_catalog_title {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #f16d7f;
+}
+.breadcrumbs,
+.breadcrumb_link {
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  color: #636363;
+}
+.active_page {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color: #f16d7f;
+}
+.catalogs_filters {
+  height: 130px;
+  display: flex;
+  align-items: center;
+}
+
+.filter_block_left {
+  display: flex;
+  margin-right: 320px;
+}
+.filter_catalog {
+  margin-right: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+}
+.filter_block_right {
+  display: flex;
+}
+
+::-webkit-details-marker {
+  display: none;
+}
+
+.checkbox_for_right_menu {
+  position: relative;
+  margin-right: 28px;
+}
+
+.right_menu_category {
+  outline: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6f6e6e;
+}
+.right_menu_category .fa-angle-down {
+  margin-left: 10px;
+}
+
+.choise_for_checkbox {
+  margin-top: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+  position: absolute;
+  z-index: 2;
+  width: 79px;
+  height: 103px;
+  background: #ffffff;
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+}
+
+.choise_box {
+  border: 1px solid #ebebeb;
+  width: 12px;
+  height: 12px;
+  margin-right: 9px;
+  border-radius: 0;
+}
+
+.clients_choise {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #6f6e6e;
+}
+.catalog_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.numbering_block {
+  margin-top: 48px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  padding: 12px 16px;
+  border: 1px solid #ebebeb;
+  justify-content: center;
+  height: 43px;
+}
+.link_pagination {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #e5e5e5;
+}
+.active_pagination {
+  color: #ef5b70;
+}
+.link_pagination_button {
+  color: black;
+}
+
+.pagination a:not(:last-child) {
+  padding-right: 15px;
 }
