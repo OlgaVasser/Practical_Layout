@@ -1,0 +1,173 @@
+.cart_container 
+    display: flex
+    margin-top: 96px
+    margin-bottom: 128px
+
+    &_card
+        display: flex
+        flex-direction: column
+        width: 650px
+
+        &_items
+            margin-bottom: 40px
+            display: flex
+            width: 650px
+            height: 306px
+            box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+        &_image 
+            width: 262px
+    
+        &_description 
+            width: 260px
+            display: flex
+            flex-direction: column
+            margin: 30px
+
+            &_name 
+                +font_midle_headings(400)
+                color: #222222
+                margin-bottom: 42px
+
+            &_info 
+                margin-bottom: 6px
+                font-weight: 400
+                font-size: 22px
+                line-height: 26px
+                color: #575757
+
+                &_quantity 
+                    display: flex
+
+                    &_number 
+                        border: 1px solid #eaeaea
+                        width: 44px
+                        height: 24px
+                        margin-left: 24px
+                        font-weight: 400
+                        font-size: 18px
+                        line-height: 22px
+                        color: #575757
+                        text-align: center
+                        outline: none
+
+        &_close 
+            margin: 30px
+
+    &_choice 
+        margin-top: 72px
+        +spaceFlex()
+        text-align: center
+
+        &_button 
+            width: 235px
+            height: 50px
+            border: 1px solid #a4a4a4
+            +font_regular(300)
+            color: #000000
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: $fontHover
+
+        &_button a:visited 
+            color: inherit
+
+        &_button:hover 
+            background-color: $colorSelect
+            color: $fontHover
+
+    &_info 
+        display: flex
+        flex-direction: column
+        margin-left: 128px
+        width: 360px
+
+        &_contact 
+            display: flex
+            flex-direction: column
+
+            &_heading 
+                +font_mini_headings(300)
+                color: #222222
+                margin-top: 14px
+
+            &_form 
+                margin: 18px 0
+                display: flex
+                flex-direction: column
+
+                &_input 
+                    border: 1px solid #a4a4a4
+                    margin-bottom: 20px
+                    outline: none
+                    font-style: normal
+                    font-weight: 300
+                    font-size: 13px
+                    line-height: 16px
+                    color: #222222
+                    padding: 15px
+
+                &_button 
+                    border: 1px solid #a4a4a4
+                    width: 100px
+                    outline: none
+                    font-weight: 300
+                    font-size: 11px
+                    line-height: 13px
+                    color: #4a4a4a
+                    padding: 10px
+                    background-color: $fontHover
+
+
+                &_button:hover 
+                    background-color: $colorSelect
+                    color: $fontHover
+
+        &_checkout 
+            background: #f5f3f3
+            height: 214px
+            margin-top: 36px
+
+            &_line 
+                width: 275px
+                color: #e2e2e2
+                margin: 20px 40px
+
+        &_subtotal 
+            display: flex
+            justify-content: flex-end
+            font-weight: 400
+            font-size: 11px
+            line-height: 13px
+            color: #4a4a4a
+            margin-top: 40px
+            margin-right: 40px
+
+            &_sum 
+                margin-left: 20px
+
+        &_grandtotal 
+            display: flex
+            justify-content: flex-end
+            +font_mini_headings(300)
+            color: #222222
+            margin-right: 40px
+            margin-top: 12px
+
+            &_sum 
+                font-weight: 700
+                color: $colorSelect
+                margin-left: 20px
+
+        &_button 
+            width: 272px
+            height: 50px
+            margin: 0 42px
+            background: $colorSelect
+
+            &_link 
+                padding: 15px 40px
+                +font_mini_headings(300)
+                color: $fontHover
+

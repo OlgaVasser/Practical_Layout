@@ -1,0 +1,386 @@
+@import var
+@import mixins    
+    
+* 
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+  font-family: "Lato", sans-serif
+
+
+a 
+  text-decoration: none
+
+
+.center 
+  padding-left: calc(50% - 570px)
+  padding-right: calc(50% - 570px)
+
+
+.main_menu 
+    +spaceFlex()
+    background-color: #222222
+    height: 75px
+    align-items: center
+
+
+.menu_search 
+  margin-left: 41px
+
+
+.menu_account 
+  margin-left: 34px
+  margin-right: 33px
+
+
+.main_view 
+  background-color: rgba(113, 103, 105, 0.08)
+  display: flex
+  width: 100%
+  height: 764px
+
+.main_view:hover 
+  filter: brightness(50%)
+
+.main_image 
+  width: 50%
+  padding-left: calc(50% - 800px)
+
+
+.main_info 
+  width: 50%
+  background-color: $backgroundTitle
+  display: flex
+  align-items: center
+  padding-right: calc(50% - 800px)
+
+
+.pink_block 
+  margin-left: 64px
+  margin-right: 16px
+  height: 92px
+  width: 12px
+  background-color: $colorSelect
+
+.main_header 
+  text-transform: uppercase
+  font-weight: 900
+  font-size: 48px
+  line-height: 58px
+  color: #222222
+
+
+.main_paragraph 
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 32px
+  line-height: 38px
+  color: #222222
+
+.pink_text 
+  color: $colorSelect
+
+
+.popular_deal 
+  +spaceFlex()
+  margin-top: 63px
+
+
+.deals_card 
+  position: relative
+
+
+.deals_card:not(:last-child) 
+  margin-right: 30px
+
+
+.deals_image 
+  width: 100%
+
+
+.deals_content 
+  position: absolute
+  width: 100%
+  height: 100%
+  top: 0
+  left: 0
+  +columnFlex()
+
+
+.deals_paragraph 
+  text-transform: uppercase
+  +font_mini_headings(400)
+  text-align: center
+  color: $fontHover
+
+
+.deals_header 
+  text-transform: uppercase
+  +font_midle_headings(700)
+  text-align: center
+  color: $colorSelect
+
+
+.big_deal 
+  margin-top: 30px
+  position: relative
+
+
+.big_deal_image 
+  width: 100%
+
+
+.gallery_introduction 
+  +columnFlex()
+  margin-top: 97px
+  margin-bottom: 48px
+
+
+.gallery_heading 
+  margin-bottom: 6px
+  font-weight: 400
+  font-size: 30px
+  line-height: 36px
+  color: #222222
+
+
+.gallery_paragraph 
+  +font_regular(400)
+  color: #9f9f9f
+
+
+.main_gallery 
+  +spaceFlex()
+  flex-wrap: wrap
+
+.card_main_gallery 
+  +columnFlex()
+  background: #f8f8f8
+  width: 360px
+  position: relative
+
+.card_main_gallery:hover .add_to_cart 
+  display: flex
+
+.card_main_gallery:hover .image_main_gallery 
+  filter: brightness(50%)
+
+
+.margin_bottom_card 
+  margin-bottom: 30px
+
+
+.image_main_gallery 
+  width: 100%
+
+
+.add_to_cart 
+  position: absolute
+  width: 138px
+  height: 43px
+  top: 188px
+  left: 111px
+  border: 1px solid $fontHover
+  display: none
+  justify-content: center
+  align-items: center
+  +font_regular(400)
+  color: $fontHover
+
+.image_add_to_cart 
+  margin-right: 10px
+
+
+.heading_main_gallery 
+  text-transform: uppercase
+  font-weight: 400
+  font-size: 13px
+  line-height: 16px
+  color: #000000
+  margin-top: 25px
+  margin-left: 16px
+
+.paragraph_main_gallery 
+  +font_regular(300)
+  color: #5d5d5d
+  margin: 15px 16px
+
+
+.price_main_gallery 
+  +font_mini_headings(400)
+  color: $colorSelect
+  margin-left: 16px
+  margin-bottom: 20px
+
+
+.allProducts_button 
+  text-align: center
+  height: 47px
+  margin-bottom: 95px
+  margin-top: 48px
+
+
+.allProducts_link 
+  border: 1px solid $colorSelect
+  padding: 14px 38px
+  +font_mini_headings(400)
+  color: $colorSelect
+
+.allProducts_link:hover 
+  background-color: $colorSelect
+  color: $fontHover
+
+
+.footer 
+  +spaceFlex()
+  background-color: #222224
+
+
+.footer_column 
+  +columnFlex()
+  margin-top: 104px
+  margin-bottom: 104px
+
+
+.footer_heading 
+  margin-top: 20px
+  margin-bottom: 16px
+  font-weight: 400
+  font-size: 20px
+  line-height: 24px
+  color: #fbfbfb
+
+
+.footer_paragraph 
+  +font_regular(300)
+  text-align: center
+  color: #fbfbfb
+
+
+.footer_subscribe 
+  background-image: url("img/img_subscribe.png")
+  background-repeat: no-repeat
+  background-size: cover
+  background-position: center bottom
+  height: 448px
+  +spaceFlex()
+
+
+.subscribe_column 
+  width: 50%
+  +columnFlex()
+
+
+.subscribe_foto 
+  margin-bottom: 40px
+
+.subscribe_feedback 
+  width: 360px
+  font-weight: 400
+  font-size: 20px
+  line-height: 24px
+  text-align: center
+  color: #222224
+
+
+.subscribe_heading 
+  text-transform: uppercase
+  font-weight: 700
+  font-size: 24px
+  line-height: 37px
+  text-align: center
+  color: #222224
+
+.subscribe_paragraph 
+  text-transform: uppercase
+  font-weight: 400
+  font-size: 18px
+  line-height: 30px
+  text-align: center
+  color: #222224
+
+
+.subscribe_button 
+  margin-top: 32px
+  display: flex
+  height: 50px
+  width: 350px
+
+
+.subscribe_email_input 
+  background: #e1e1e1
+  border: 0
+  border-bottom-left-radius: 30px
+  border-top-left-radius: 30px
+  padding: 20px
+  width: 75%
+  +font_regular(400)
+  color: #222224
+  opacity: 0.67
+  outline: none
+
+
+.subscribe_email_button 
+    background-color: $colorSelect
+    border: 0
+    border-bottom-right-radius: 30px
+    border-top-right-radius: 30px
+    padding: 0 20px
+    +font_regular(400)
+    text-align: center
+    color: $fontHover
+    outline: none
+
+
+.footer_copyright 
+    margin-top: 30px
+    margin-bottom: 30px
+
+
+.text_copyright 
+    +font_mini_headings(400)
+    color: #fbfbfb
+
+
+.footer_social_media 
+    +spaceFlex()
+    align-items: center
+
+
+.social_media 
+    display: flex
+    justify-content: center
+    align-items: center
+    height: 32px
+    width: 32px
+    background-color: white
+    margin-left: 7px
+
+
+.social_media a i 
+    color: #000000
+
+.social_media a:visited 
+    color: inherit
+
+
+.social_media:hover
+    background-color: $colorSelect
+
+.social_media:hover a i
+    color: $fontHover
+
+
+
+
+// Catalog's styles
+@import catalog
+
+// Product's  styles
+@import product
+
+// Cart's styles
+@import cart
+
+// Registretion's styles
+@import registration
