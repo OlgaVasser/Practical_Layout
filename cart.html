@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b5b0d04b9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main_menu center">
+      <div class="left_menu">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+        <a href="#"
+          ><img class="menu_search" src="img/search.svg" alt="search"
+        /></a>
+      </div>
+      <div class="right_menu">
+        <a href="catalog.html"><img src="img/menu.svg" alt="menu" /></a>
+        <a href="registration.html"
+          ><img class="menu_account" src="img/account.svg" alt="account"
+        /></a>
+        <a href="cart.html"><img src="img/cart.svg" alt="cart" /></a>
+      </div>
+    </header>
+
+    <section class="catalog_title center">
+      <h2 class="heading_catalog_title">shopping cart</h2>
+    </section>
+
+    <section class="cart_container center">
+      <div class="cart_container_card">
+        <div class="cart_container_card_items">
+          <img
+            class="cart_container_card_image"
+            src="img/gallery3.png"
+            alt="item"
+          />
+
+          <div class="cart_container_card_description">
+            <p class="cart_container_card_description_name">
+              MANGO PEOPLE <br />
+              T-SHIRT
+            </p>
+            <p class="cart_container_card_description_info">
+              Prise: <span class="pink_text"> $300</span>
+            </p>
+            <p class="cart_container_card_description_info">Color: red</p>
+            <p class="cart_container_card_description_info">Size: XL</p>
+            <div
+              class="cart_container_card_description_info cart_container_card_description_info_quantity"
+            >
+              <label for="items_quantity_1">Quantity:</label>
+              <input
+                class="cart_container_card_description_info_quantity_number"
+                type="text"
+                id="items_quantity_1"
+                name="Quantity"
+                value="2"
+              />
+            </div>
+          </div>
+          <div class="cart_container_card_close">
+            <img src="img/close_img.svg" alt="close" />
+          </div>
+        </div>
+
+        <div class="cart_container_card_items">
+          <img
+            class="cart_container_card_image"
+            src="img/cart_image.png"
+            alt="item"
+          />
+          <div class="cart_container_card_description">
+            <p class="cart_container_card_description_name">
+              MANGO PEOPLE <br />
+              T-SHIRT
+            </p>
+            <p class="cart_container_card_description_info">
+              Prise: <span class="pink_text"> $300</span>
+            </p>
+            <p class="cart_container_card_description_info">Color: red</p>
+            <p class="cart_container_card_description_info">Size: XL</p>
+            <div
+              class="cart_container_card_description_info cart_container_card_description_info_quantity"
+            >
+              <label for="items_quantity_2">Quantity:</label>
+              <input
+                class="cart_container_card_description_info_quantity_number"
+                type="text"
+                id="items_quantity_2"
+                name="Quantity"
+                value="2"
+              />
+            </div>
+          </div>
+          <div class="cart_container_card_close">
+            <img src="img/close_img.svg" alt="close" />
+          </div>
+        </div>
+
+        <div class="cart_container_choice">
+          <div class="cart_container_choice_button">
+            <p><a href="">CLEAR SHOPPING CART</a></p>
+          </div>
+          <div class="cart_container_choice_button">
+            <p><a href="">CONTINUE SHOPPING</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="cart_container_info">
+        <div class="cart_container_info_contact">
+          <h4 class="cart_container_info_contact_heading">SHIPPING ADDRESS</h4>
+          <form class="cart_container_info_contact_form" action="#">
+            <input
+              class="cart_container_info_contact_form_input"
+              type="text"
+              value="Bangladesh"
+            />
+            <input
+              class="cart_container_info_contact_form_input"
+              type="text"
+              placeholder="State"
+            />
+            <input
+              class="cart_container_info_contact_form_input"
+              type="text"
+              placeholder="Postcode / Zip"
+            />
+            <input
+              class="cart_container_info_contact_form_button"
+              type="submit"
+              value="GET A QUOTE"
+            />
+          </form>
+        </div>
+        <div class="cart_container_info_checkout">
+          <div class="cart_container_info_subtotal">
+            <p>SUB TOTAL</p>
+            <p class="cart_container_info_subtotal_sum">$900</p>
+          </div>
+          <div class="cart_container_info_grandtotal">
+            <p>GRAND TOTAL</p>
+            <p class="cart_container_info_grandtotal_sum">$900</p>
+          </div>
+          <hr class="cart_container_info_checkout_line" />
+          <a href=""
+            ><div class="cart_container_info_button">
+              <p class="cart_container_info_button_link">PROCEED TO CHECKOUT</p>
+            </div></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <section class="footer_subscribe center">
+        <figure class="subscribe_column">
+          <img class="subscribe_foto" src="img/foto_subsribe.png" alt="Foto" />
+          <p class="subscribe_feedback">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+            purus condimentum“
+          </p>
+        </figure>
+        <div class="subscribe_column">
+          <h3 class="subscribe_heading">subscribe</h3>
+          <p class="subscribe_paragraph">for our newletter and promotion</p>
+          <form class="subscribe_button" action="#">
+            <input
+              class="subscribe_email_input"
+              type="email"
+              required
+              placeholder="Enter Your Email"
+            />
+            <input
+              class="subscribe_email_button"
+              type="submit"
+              value="Subscribe"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="footer center">
+        <div class="footer_copyright">
+          <p class="text_copyright">&copy; 2021 Brand All Rights Reserved.</p>
+        </div>
+        <div class="footer_social_media">
+          <div class="social_media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="social_media">
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="social_media">
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+          <div class="social_media">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>

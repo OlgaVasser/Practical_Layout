@@ -1,0 +1,125 @@
+.product_slider_show 
+  padding-left: calc(50% - 800px)
+  padding-right: calc(50% - 800px)
+  height: 777px
+  +spaceFlex()
+  align-items: center
+  background: #f7f7f7
+  position: relative
+  z-index: 1
+
+.product_slider_show_arrow 
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 47px
+  width: 47px
+  background: rgba(42, 42, 42, 0.15)
+
+
+.product_slider_show_arrow a:visited 
+  color: inherit
+
+.product_slider_show_arrow:hover a 
+  color: $colorSelect
+
+.about_product_card 
+  +columnFlex()
+  margin: 0 auto
+  position: relative
+  width: 1140px
+  border: 1px solid #eaeaea
+  margin-top: -65px
+  z-index: 2
+  background: white
+
+.product_description 
+  +columnFlex()
+  padding-top: 65px
+
+.product_card_category 
+  text-transform: uppercase
+  +font_regular(300)
+  color: $colorSelect
+  margin-bottom: 12px
+
+.product_card_name 
+  text-transform: uppercase
+  font-weight: 300
+  font-size: 18px
+  line-height: 22px
+  color: #4d4d4d
+  margin-top: 12px
+  margin-bottom: 48px
+
+.product_card_description 
+  width: 555px
+  +font_regular(300)
+  text-align: center
+  color: #5e5e5e
+  margin-bottom: 32px
+
+.product_card_price 
+  +font_midle_headings(300)
+  color: $colorSelect
+
+.product_card_line 
+  border: 1px solid #eaeaea
+  width: 640px
+  margin: 65px 0
+
+.product_card_filter 
+  display: flex
+  justify-content: center
+  align-items: center
+
+  position: relative
+
+.checkbox_for_product_card 
+
+.choice_for_product_category 
+  +font_regular(400)
+  color: #6f6e6e
+  outline: none
+
+.choice_for_product_category .fa-angle-down 
+  margin-left: 10px
+
+.choice_for_product_category:not(:last-child) 
+  margin-right: 23px
+
+
+.product_button 
+  margin-top: 48px
+  margin-bottom: 65px
+  height: 47px
+  width: 210px
+  border: 1px solid $colorSelect
+  display: flex
+  justify-content: center
+  align-items: center
+
+.image_add_to_card_product 
+  margin-right: 22px
+
+.link_add_to_card_product 
+  +font_mini_headings(400)
+  color: $colorSelect
+
+.product_button:hover .link_add_to_card_product 
+  background-color: $colorSelect
+  color: $fontHover
+
+.product_button:hover 
+  background-color: $colorSelect
+  color: $fontHover
+
+
+.product_button:hover #svg_add_to_cart 
+  fill: white
+
+
+.product_gallery 
+  +spaceFlex()
+  flex-wrap: wrap
+  margin: 128px 0

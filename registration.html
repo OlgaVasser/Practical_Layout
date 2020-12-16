@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/b5b0d04b9e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="main_menu center">
+      <div class="left_menu">
+        <a href="index.html"><img src="img/logo.svg" alt="logo" /></a>
+        <a href="#"
+          ><img class="menu_search" src="img/search.svg" alt="search"
+        /></a>
+      </div>
+      <div class="right_menu">
+        <a href="catalog.html"><img src="img/menu.svg" alt="menu" /></a>
+        <a href="registration.html"
+          ><img class="menu_account" src="img/account.svg" alt="account"
+        /></a>
+        <a href="cart.html"><img src="img/cart.svg" alt="cart" /></a>
+      </div>
+    </header>
+
+    <section class="catalog_title center">
+      <h2 class="heading_catalog_title">REGISTRATION</h2>
+    </section>
+
+    <section class="registration_container center">
+      <div class="registration_container_form">
+        <div class="registration_container_form_block">
+          <p>Your Name</p>
+          <input
+            class="registration_container_form_block_input"
+            type="text"
+            placeholder="First Name"
+            required
+          />
+          <input
+            class="registration_container_form_block_input"
+            type="text"
+            placeholder="Last Name"
+            required
+          />
+        </div>
+        <div class="registration_container_form_choice">
+          <input
+            class="registration_container_form_choice_circle"
+            type="radio"
+            id="male"
+            name="sex"
+            value="Male"
+          />
+          <label class="registration_container_form_choice_label" for="male"
+            >Male</label
+          >
+          <input
+            class="registration_container_form_choice_circle"
+            type="radio"
+            id="female"
+            name="sex"
+            value="Female"
+          />
+          <label class="registration_container_form_choice_label" for="female"
+            >Female</label
+          >
+        </div>
+        <div class="registration_container_form_block">
+          <p>Login details</p>
+          <input
+            class="registration_container_form_block_input"
+            type="email"
+            placeholder="Email"
+            required
+          />
+          <input
+            class="registration_container_form_block_input"
+            type="password"
+            minlength="8"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <p class="registration_container_form_condition">
+          Please use 8 or more characters, with at least 1 number and a mixture
+          of uppercase and lowercase letters
+        </p>
+        <a href="#"
+          ><div class="registration_container_form_button">
+            <p>JOIN NOW</p>
+            <img src="img/arrow_join.svg" alt="arrow" />
+          </div>
+        </a>
+      </div>
+      <div class="registration_container_info">
+        <h3 class="registration_container_info_heading">
+          LOYALTY HAS ITS PERKS
+        </h3>
+        <p class="registration_container_info_text">
+          Get in on the loyalty program where you can earn points and unlock
+          serious perks. Starting with these as soon as you join:
+        </p>
+        <ul class="registration_container_info_list">
+          <li>15% off welcome offer</li>
+          <li>Free shipping, returns and exchanges on all orders</li>
+          <li>$10 off a purchase on your birthday</li>
+          <li>Early access to products</li>
+          <li>Exclusive offers & rewards</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer>
+      <section class="footer_subscribe center">
+        <figure class="subscribe_column">
+          <img class="subscribe_foto" src="img/foto_subsribe.png" alt="Foto" />
+          <p class="subscribe_feedback">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar
+            purus condimentum“
+          </p>
+        </figure>
+        <div class="subscribe_column">
+          <h3 class="subscribe_heading">subscribe</h3>
+          <p class="subscribe_paragraph">for our newletter and promotion</p>
+          <form class="subscribe_button" action="#">
+            <input
+              class="subscribe_email_input"
+              type="email"
+              required
+              placeholder="Enter Your Email"
+            />
+            <input
+              class="subscribe_email_button"
+              type="submit"
+              value="Subscribe"
+            />
+          </form>
+        </div>
+      </section>
+      <section class="footer center">
+        <div class="footer_copyright">
+          <p class="text_copyright">&copy; 2021 Brand All Rights Reserved.</p>
+        </div>
+        <div class="footer_social_media">
+          <div class="social_media">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+          <div class="social_media">
+            <a href="#"> <i class="fab fa-instagram"></i></a>
+          </div>
+          <div class="social_media">
+            <a href="#"><i class="fab fa-pinterest-p"></i></a>
+          </div>
+          <div class="social_media">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
