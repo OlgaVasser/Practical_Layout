@@ -4,7 +4,7 @@
   height: 777px
   +spaceFlex()
   align-items: center
-  background: #f7f7f7
+  background: $colorBackground
   position: relative
   z-index: 1
 
@@ -28,7 +28,7 @@
   margin: 0 auto
   position: relative
   width: 1140px
-  border: 1px solid #eaeaea
+  border: 1px solid $colorInput
   margin-top: -65px
   z-index: 2
   background: white
@@ -48,7 +48,7 @@
   font-weight: 300
   font-size: 18px
   line-height: 22px
-  color: #4d4d4d
+  color: $colorBasic
   margin-top: 12px
   margin-bottom: 48px
 
@@ -56,7 +56,7 @@
   width: 555px
   +font_regular(300)
   text-align: center
-  color: #5e5e5e
+  color: $colorBasic
   margin-bottom: 32px
 
 .product_card_price 
@@ -64,7 +64,7 @@
   color: $colorSelect
 
 .product_card_line 
-  border: 1px solid #eaeaea
+  border: 1px solid $colorInput
   width: 640px
   margin: 65px 0
 
@@ -79,7 +79,7 @@
 
 .choice_for_product_category 
   +font_regular(400)
-  color: #6f6e6e
+  color: $colorBasic
   outline: none
 
 .choice_for_product_category .fa-angle-down 
@@ -108,12 +108,13 @@
 
 .product_button:hover .link_add_to_card_product 
   background-color: $colorSelect
-  color: $fontHover
+  color: $colorHover
 
 .product_button:hover 
   background-color: $colorSelect
-  color: $fontHover
-
+  color: $colorHover
+  -webkit-animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+          animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
 
 .product_button:hover #svg_add_to_cart 
   fill: white

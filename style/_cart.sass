@@ -1,0 +1,189 @@
+.cart_container 
+    display: flex
+    margin-top: 96px
+    margin-bottom: 128px
+
+.cart_items
+    display: flex
+    flex-direction: column
+    width: 650px
+
+.cart_card
+    margin-bottom: 40px
+    display: flex
+    width: 650px
+    height: 306px
+    box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
+
+    &:hover
+        transform: scale(1.1)
+        transition-timing-function: ease-in-out
+        transition: 1s
+
+    &_image 
+        width: 262px
+    
+    &_description 
+        width: 260px
+        display: flex
+        flex-direction: column
+        margin: 30px
+
+        &_name 
+            +font_midle_headings(400)
+            color: $colorMain
+            margin-bottom: 42px
+
+        &_info 
+            margin-bottom: 6px
+            font-weight: 400
+            font-size: 22px
+            line-height: 26px
+            color: $colorBasic
+
+.description_quantity 
+    display: flex
+
+.description_number 
+    border: 1px solid $colorInput
+    width: 44px
+    height: 24px
+    margin-left: 24px
+    font-weight: 400
+    font-size: 18px
+    line-height: 22px
+    color: $colorBasic
+    text-align: center
+    outline: none
+
+.card_close 
+    margin: 30px
+
+.cart_choice 
+    margin-top: 72px
+    +spaceFlex()
+    text-align: center
+
+.choice_button 
+    width: 235px
+    height: 50px
+    border: 1px solid $colorBorder
+    +font_regular(300)
+    color: $colorBasicBlack
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: $colorHover
+
+    & a:visited 
+        color: inherit
+
+    &:hover 
+        background-color: $colorSelect
+        color: $colorHover
+        -webkit-animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+	        animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+
+
+.cart_info 
+    display: flex
+    flex-direction: column
+    margin-left: 128px
+    width: 360px
+
+.cart_contact 
+    display: flex
+    flex-direction: column
+
+    &_heading 
+        +font_mini_headings(300)
+        color: $colorMain
+        margin-top: 14px
+
+.contact_form 
+    margin: 18px 0
+    display: flex
+    flex-direction: column
+
+    &_input 
+        border: 1px solid $colorBorder
+        margin-bottom: 20px
+        outline: none
+        font-style: normal
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: $colorMain
+        padding: 15px
+
+    &_button 
+        border: 1px solid $colorBorder
+        width: 100px
+        outline: none
+        font-weight: 300
+        font-size: 11px
+        line-height: 13px
+        color: $colorMain
+        padding: 10px
+        background-color: $colorHover
+
+        &:hover 
+            background-color: $colorSelect
+            color: $colorHover
+            -webkit-animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+                    animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+
+            
+
+.cart_checkout 
+    background: $colorBackground
+    height: 214px
+    margin-top: 36px
+
+    &_line 
+        width: 275px
+        color: $colorInput
+        margin: 20px 40px
+
+    &_subtotal 
+        display: flex
+        justify-content: flex-end
+        font-weight: 400
+        font-size: 11px
+        line-height: 13px
+        color: $colorMain
+        margin-top: 40px
+        margin-right: 40px
+
+        &_sum 
+            margin-left: 20px
+
+    &_grandtotal 
+        display: flex
+        justify-content: flex-end
+        +font_mini_headings(300)
+        color: $colorMain
+        margin-right: 40px
+        margin-top: 12px
+
+        &_sum 
+            font-weight: 700
+            color: $colorSelect
+            margin-left: 20px
+
+.cart_info_button 
+    width: 272px
+    height: 50px
+    margin: 0 42px
+    background: $colorSelect
+
+    &_link 
+        padding: 15px 40px
+        +font_mini_headings(300)
+        color: $colorHover
+
+    &:hover
+        -webkit-animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+	        animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+
+

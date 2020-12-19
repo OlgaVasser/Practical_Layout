@@ -1,0 +1,82 @@
+.registration_container
+    margin-top: 64px
+    margin-bottom: 96px
+    display: flex
+
+.registration_form
+        width: 360px
+        +font_mini_headings(300)
+        color: $colorMain
+
+.form_choice
+    margin: 34px 0
+    display: flex
+    align-items: center
+
+    &_label
+        font-size: 11px
+        line-height: 13px
+        margin-left: 10px
+        margin-right: 20px
+
+    &_circle
+        width: 17px
+        height: 17px
+
+.form_block
+    display: flex
+    flex-direction: column
+
+    &_input
+        margin-top: 22px
+        padding-left: 16px
+        height: 45px
+        border: 1px solid $colorBorder
+        font-weight: 300
+        font-size: 13px
+        line-height: 16px
+        color: $colorInput
+        outline: none
+
+.form_condition
+    margin-top: 16px
+    font-weight: 300
+    font-size: 13px
+    line-height: 16px
+    color: $colorInput
+
+.form_button
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 26px
+    background: $colorSelect
+    width: 166px
+    height: 50px
+    margin-top: 40px
+    +font_regular(400)
+    color: $colorHover
+
+    &:hover
+        -webkit-animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+                animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+
+.registration_info
+    margin-left: 128px
+    width: 650px
+    +font_midle_headings(300)
+    color: $colorBasicBlack
+
+.info_heading
+    +font_midle_headings(300)
+
+.info_text
+    margin: 22px 0
+          
+.info_list li
+    margin-bottom: 16px
+    list-style: none
+    background: url(../img/check_mark.svg) no-repeat 0 4px
+    padding-left: 48px  
+
+          
