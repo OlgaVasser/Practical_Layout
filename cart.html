@@ -9,7 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style/style.css" />
     <script
       src="https://kit.fontawesome.com/b5b0d04b9e.js"
       crossorigin="anonymous"
@@ -37,124 +37,110 @@
     </section>
 
     <section class="cart_container center">
-      <div class="cart_container_card">
-        <div class="cart_container_card_items">
-          <img
-            class="cart_container_card_image"
-            src="img/gallery3.png"
-            alt="item"
-          />
+      <div class="cart_items">
+        <div class="cart_card">
+          <img class="cart_card_image" src="img/gallery3.png" alt="item" />
 
-          <div class="cart_container_card_description">
-            <p class="cart_container_card_description_name">
-              MANGO PEOPLE <br />
-              T-SHIRT
-            </p>
-            <p class="cart_container_card_description_info">
+          <div class="cart_card_description">
+            <a href="#">
+              <p class="cart_card_description_name">
+                MANGO PEOPLE <br />
+                T-SHIRT
+              </p></a
+            >
+            <p class="cart_card_description_info">
               Prise: <span class="pink_text"> $300</span>
             </p>
-            <p class="cart_container_card_description_info">Color: red</p>
-            <p class="cart_container_card_description_info">Size: XL</p>
-            <div
-              class="cart_container_card_description_info cart_container_card_description_info_quantity"
-            >
+            <p class="cart_card_description_info">Color: red</p>
+            <p class="cart_card_description_info">Size: XL</p>
+            <div class="cart_card_description_info description_quantity">
               <label for="items_quantity_1">Quantity:</label>
               <input
-                class="cart_container_card_description_info_quantity_number"
-                type="text"
+                class="description_number"
+                type="number"
+                min="1"
                 id="items_quantity_1"
                 name="Quantity"
                 value="2"
               />
             </div>
           </div>
-          <div class="cart_container_card_close">
+          <div class="card_close">
             <img src="img/close_img.svg" alt="close" />
           </div>
         </div>
 
-        <div class="cart_container_card_items">
-          <img
-            class="cart_container_card_image"
-            src="img/cart_image.png"
-            alt="item"
-          />
-          <div class="cart_container_card_description">
-            <p class="cart_container_card_description_name">
-              MANGO PEOPLE <br />
-              T-SHIRT
-            </p>
-            <p class="cart_container_card_description_info">
+        <div class="cart_card">
+          <img class="cart_card_image" src="img/cart_image.png" alt="item" />
+          <div class="cart_card_description">
+            <a href="#"
+              ><p class="cart_card_description_name">
+                MANGO PEOPLE <br />
+                T-SHIRT
+              </p></a
+            >
+            <p class="cart_card_description_info">
               Prise: <span class="pink_text"> $300</span>
             </p>
-            <p class="cart_container_card_description_info">Color: red</p>
-            <p class="cart_container_card_description_info">Size: XL</p>
-            <div
-              class="cart_container_card_description_info cart_container_card_description_info_quantity"
-            >
+            <p class="cart_card_description_info">Color: red</p>
+            <p class="cart_card_description_info">Size: XL</p>
+            <div class="cart_card_description_info description_quantity">
               <label for="items_quantity_2">Quantity:</label>
               <input
-                class="cart_container_card_description_info_quantity_number"
-                type="text"
+                class="description_number"
+                type="number"
+                min="1"
                 id="items_quantity_2"
                 name="Quantity"
                 value="2"
               />
             </div>
           </div>
-          <div class="cart_container_card_close">
+          <div class="card_close">
             <img src="img/close_img.svg" alt="close" />
           </div>
         </div>
 
-        <div class="cart_container_choice">
-          <div class="cart_container_choice_button">
+        <div class="cart_choice">
+          <div class="choice_button">
             <p><a href="">CLEAR SHOPPING CART</a></p>
           </div>
-          <div class="cart_container_choice_button">
+          <div class="choice_button">
             <p><a href="">CONTINUE SHOPPING</a></p>
           </div>
         </div>
       </div>
-      <div class="cart_container_info">
-        <div class="cart_container_info_contact">
-          <h4 class="cart_container_info_contact_heading">SHIPPING ADDRESS</h4>
-          <form class="cart_container_info_contact_form" action="#">
+      <div class="cart_info">
+        <div class="cart_contact">
+          <h4 class="cart_contact_heading">SHIPPING ADDRESS</h4>
+          <form class="contact_form" action="#">
+            <input class="contact_form_input" type="text" value="Bangladesh" />
+            <input class="contact_form_input" type="text" placeholder="State" />
             <input
-              class="cart_container_info_contact_form_input"
-              type="text"
-              value="Bangladesh"
-            />
-            <input
-              class="cart_container_info_contact_form_input"
-              type="text"
-              placeholder="State"
-            />
-            <input
-              class="cart_container_info_contact_form_input"
+              class="contact_form_input"
               type="text"
               placeholder="Postcode / Zip"
             />
             <input
-              class="cart_container_info_contact_form_button"
+              class="contact_form_button"
               type="submit"
               value="GET A QUOTE"
             />
           </form>
         </div>
-        <div class="cart_container_info_checkout">
-          <div class="cart_container_info_subtotal">
+        <div class="cart_checkout">
+          <div class="cart_checkout_subtotal">
             <p>SUB TOTAL</p>
-            <p class="cart_container_info_subtotal_sum">$900</p>
+            <p class="cart_checkout_subtotal_sum">$900</p>
           </div>
-          <div class="cart_container_info_grandtotal">
+          <div class="cart_checkout_grandtotal">
             <p>GRAND TOTAL</p>
-            <p class="cart_container_info_grandtotal_sum">$900</p>
+            <p class="cart_checkout_grandtotal_sum">$900</p>
           </div>
-          <hr class="cart_container_info_checkout_line" />
+          <hr class="cart_checkout_line" />
           <a href=""
-            ><div class="cart_container_info_button">
-              <p class="cart_container_info_button_link">PROCEED TO CHECKOUT</p>
+            ><div class="cart_info_button">
+              <p class="cart_info_button_link">PROCEED TO CHECKOUT</p>
             </div></a
           >
         </div>

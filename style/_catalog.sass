@@ -8,12 +8,14 @@
   text-transform: uppercase
   +font_midle_headings(400)
   color: $colorSelect
+  &:hover
+    +rotate_for_title()
 
 .breadcrumbs,
 .breadcrumb_link 
   text-transform: uppercase
   +font_regular(300)
-  color: #636363
+  color: $colorBasic
 
 .breadcrumb_link:hover 
   color: $colorSelect
@@ -40,8 +42,9 @@
 .filter_catalog 
   position: absolute
   +font_regular(400)
-  color: #6f6e6e
+  color: $colorBasic
   margin-top: -8px
+  padding-left: 16px
 
 .filter_text 
   font-weight: 600
@@ -51,7 +54,7 @@
 
 .filter_catalog_active:hover 
   width: 360px
-  background: $fontHover
+  background: $colorHover
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
   padding: 16px
   position: absolute
@@ -82,7 +85,7 @@
 
 .line_filter 
   width: 327px
-  color: #ebebeb
+  color: $colorInput
 
 .filter_list 
   list-style-type: none
@@ -118,7 +121,7 @@
 .right_menu_category 
   outline: none
   +font_regular(400)
-  color: #6f6e6e
+  color: $colorBasic
 
 .right_menu_category .fa-angle-down 
   margin-left: 10px
@@ -130,12 +133,12 @@
   position: absolute
   z-index: 2
   width: 79px
-  background: $fontHover
+  background: $colorHover
   box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
 
 
 .choise_box 
-  border: 1px solid #ebebeb
+  border: 1px solid $colorInput
   width: 12px
   height: 12px
   margin-right: 9px
@@ -144,7 +147,7 @@
 
 .clients_choise 
   +font_regular(400)
-  color: #6f6e6e
+  color: $colorBasic
 
 .catalog_gallery 
   +spaceFlex()
@@ -159,19 +162,19 @@
 
 .pagination 
   padding: 12px 16px
-  border: 1px solid #ebebeb
+  border: 1px solid $colorInput
   justify-content: center
   height: 43px
 
 .link_pagination 
   +font_mini_headings(300)
-  color: #e5e5e5
+  color: $colorInput
 
 .active_pagination 
   color: $colorSelect
 
 .link_pagination_button 
-  color: black
+  color: $colorBasicBlack
 
 
 .pagination a:not(:last-child) 

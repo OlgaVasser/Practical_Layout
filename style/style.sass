@@ -16,10 +16,9 @@ a
   padding-left: calc(50% - 570px)
   padding-right: calc(50% - 570px)
 
-
 .main_menu 
     +spaceFlex()
-    background-color: #222222
+    background-color: $colorMain
     height: 75px
     align-items: center
 
@@ -53,7 +52,9 @@ a
   display: flex
   align-items: center
   padding-right: calc(50% - 800px)
-
+  &:hover .main_header
+    -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+	          animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
 
 .pink_block 
   margin-left: 64px
@@ -67,7 +68,7 @@ a
   font-weight: 900
   font-size: 48px
   line-height: 58px
-  color: #222222
+  color: $colorMain
 
 
 .main_paragraph 
@@ -75,7 +76,7 @@ a
   font-weight: 700
   font-size: 32px
   line-height: 38px
-  color: #222222
+  color: $colorMain
 
 .pink_text 
   color: $colorSelect
@@ -88,6 +89,11 @@ a
 
 .deals_card 
   position: relative
+
+  &:hover
+    transform: scale(1.1)
+    transition-timing-function: ease-in-out
+    transition: 1s
 
 
 .deals_card:not(:last-child) 
@@ -106,12 +112,11 @@ a
   left: 0
   +columnFlex()
 
-
 .deals_paragraph 
   text-transform: uppercase
   +font_mini_headings(400)
   text-align: center
-  color: $fontHover
+  color: $colorHover
 
 
 .deals_header 
@@ -124,6 +129,10 @@ a
 .big_deal 
   margin-top: 30px
   position: relative
+  &:hover
+    transform: scale(1.1)
+    transition-timing-function: ease-in-out
+    transition: 1s
 
 
 .big_deal_image 
@@ -141,12 +150,12 @@ a
   font-weight: 400
   font-size: 30px
   line-height: 36px
-  color: #222222
+  color: $colorMain
 
 
 .gallery_paragraph 
   +font_regular(400)
-  color: #9f9f9f
+  color: $colorBorder
 
 
 .main_gallery 
@@ -155,15 +164,19 @@ a
 
 .card_main_gallery 
   +columnFlex()
-  background: #f8f8f8
+  background: $colorBackground
   width: 360px
   position: relative
+  &:hover
+    transform: scale(1.1)
+    transition-timing-function: ease-in-out
+    transition: 1s
 
-.card_main_gallery:hover .add_to_cart 
-  display: flex
+  &:hover .add_to_cart 
+    display: flex
 
-.card_main_gallery:hover .image_main_gallery 
-  filter: brightness(50%)
+  &:hover .image_main_gallery 
+    filter: brightness(50%)
 
 
 .margin_bottom_card 
@@ -180,12 +193,12 @@ a
   height: 43px
   top: 188px
   left: 111px
-  border: 1px solid $fontHover
+  border: 1px solid $colorHover
   display: none
   justify-content: center
   align-items: center
   +font_regular(400)
-  color: $fontHover
+  color: $colorHover
 
 .image_add_to_cart 
   margin-right: 10px
@@ -196,13 +209,13 @@ a
   font-weight: 400
   font-size: 13px
   line-height: 16px
-  color: #000000
+  color: $colorBasicBlack
   margin-top: 25px
   margin-left: 16px
 
 .paragraph_main_gallery 
   +font_regular(300)
-  color: #5d5d5d
+  color: $colorBasic
   margin: 15px 16px
 
 
@@ -228,13 +241,14 @@ a
 
 .allProducts_link:hover 
   background-color: $colorSelect
-  color: $fontHover
-
+  color: $colorHover
+  -webkit-animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
+	        animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
 
 .footer 
   +spaceFlex()
-  background-color: #222224
-
+  background-color: $colorMain
+ 
 
 .footer_column 
   +columnFlex()
@@ -248,28 +262,27 @@ a
   font-weight: 400
   font-size: 20px
   line-height: 24px
-  color: #fbfbfb
+  color: $colorMainHeaders
 
 
 .footer_paragraph 
   +font_regular(300)
   text-align: center
-  color: #fbfbfb
+  color: $colorMainHeaders
 
 
 .footer_subscribe 
-  background-image: url("img/img_subscribe.png")
+  background-image: url("../img/img_subscribe.png")
   background-repeat: no-repeat
   background-size: cover
   background-position: center bottom
   height: 448px
   +spaceFlex()
-
+ 
 
 .subscribe_column 
   width: 50%
   +columnFlex()
-
 
 .subscribe_foto 
   margin-bottom: 40px
@@ -280,7 +293,7 @@ a
   font-size: 20px
   line-height: 24px
   text-align: center
-  color: #222224
+  color: $colorMain
 
 
 .subscribe_heading 
@@ -289,7 +302,7 @@ a
   font-size: 24px
   line-height: 37px
   text-align: center
-  color: #222224
+  color: $colorMain
 
 .subscribe_paragraph 
   text-transform: uppercase
@@ -297,7 +310,7 @@ a
   font-size: 18px
   line-height: 30px
   text-align: center
-  color: #222224
+  color: $colorMain
 
 
 .subscribe_button 
@@ -308,14 +321,14 @@ a
 
 
 .subscribe_email_input 
-  background: #e1e1e1
+  background: $colorInput
   border: 0
   border-bottom-left-radius: 30px
   border-top-left-radius: 30px
   padding: 20px
   width: 75%
   +font_regular(400)
-  color: #222224
+  color: $colorMain
   opacity: 0.67
   outline: none
 
@@ -328,9 +341,10 @@ a
     padding: 0 20px
     +font_regular(400)
     text-align: center
-    color: $fontHover
+    color: $colorHover
     outline: none
-
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both
+	          animation: heartbeat 1.5s ease-in-out infinite both
 
 .footer_copyright 
     margin-top: 30px
@@ -339,7 +353,7 @@ a
 
 .text_copyright 
     +font_mini_headings(400)
-    color: #fbfbfb
+    color: $colorMainHeaders
 
 
 .footer_social_media 
@@ -353,12 +367,12 @@ a
     align-items: center
     height: 32px
     width: 32px
-    background-color: white
+    background-color: $colorHover
     margin-left: 7px
 
 
 .social_media a i 
-    color: #000000
+    color: $colorBasicBlack
 
 .social_media a:visited 
     color: inherit
@@ -368,7 +382,7 @@ a
     background-color: $colorSelect
 
 .social_media:hover a i
-    color: $fontHover
+    color: $colorHover
 
 
 
@@ -384,3 +398,6 @@ a
 
 // Registretion's styles
 @import registration
+
+// Animation
+@import animation
