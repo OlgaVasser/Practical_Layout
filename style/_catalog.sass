@@ -150,7 +150,8 @@
   color: $colorBasic
 
 .catalog_gallery 
-  +spaceFlex()
+  display: flex
+  justify-content: space-around
   flex-wrap: wrap
 
 .numbering_block 
@@ -179,3 +180,60 @@
 
 .pagination a:not(:last-child) 
   padding-right: 15px
+
+
+@media (max-width: 1023px)
+
+  .catalog_title
+    padding: 0 16px
+
+  .catalogs_filters 
+    height: 80px
+
+  .filter_block_right 
+    padding-right: 16px
+    flex-grow: 1
+    flex-basis: 1
+    justify-content: flex-end
+
+  .checkbox_for_right_menu:last-child
+    margin-right: 0
+
+  .catalog_gallery 
+    padding-left: 16px
+
+  .numbering_block 
+    margin-top: 40px
+    height: 106px
+
+
+@media (max-width: 667px)
+
+  .catalog_title
+    +columnFlex()
+
+  .heading_catalog_title
+    margin-bottom: 32px
+
+  .filter_catalog
+    padding-left: 8px
+    margin-top: -12px
+
+  .filter_text_icon
+    margin-left: 0
+
+  .filter_catalog_active:hover 
+    padding: 8px
+    margin-top: -20px
+
+  .filter_block_right 
+    padding-right: 8px
+
+  .right_menu_category, .clients_choise, .filter_catalog
+    font-size: 12px
+    line-height: 14px
+  
+@media (min-width: 668px)
+  .hidden_desktop
+    display: none
+    visibility: hidden

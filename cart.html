@@ -25,10 +25,12 @@
       </div>
       <div class="right_menu">
         <a href="catalog.html"><img src="img/menu.svg" alt="menu" /></a>
-        <a href="registration.html"
+        <a class="hidden_mobile" href="registration.html"
           ><img class="menu_account" src="img/account.svg" alt="account"
         /></a>
-        <a href="cart.html"><img src="img/cart.svg" alt="cart" /></a>
+        <a class="hidden_mobile" href="cart.html"
+          ><img src="img/cart.svg" alt="cart"
+        /></a>
       </div>
     </header>
 
@@ -40,64 +42,67 @@
       <div class="cart_items">
         <div class="cart_card">
           <img class="cart_card_image" src="img/gallery3.png" alt="item" />
-
-          <div class="cart_card_description">
-            <a href="#">
-              <p class="cart_card_description_name">
-                MANGO PEOPLE <br />
-                T-SHIRT
-              </p></a
-            >
-            <p class="cart_card_description_info">
-              Prise: <span class="pink_text"> $300</span>
-            </p>
-            <p class="cart_card_description_info">Color: red</p>
-            <p class="cart_card_description_info">Size: XL</p>
-            <div class="cart_card_description_info description_quantity">
-              <label for="items_quantity_1">Quantity:</label>
-              <input
-                class="description_number"
-                type="number"
-                min="1"
-                id="items_quantity_1"
-                name="Quantity"
-                value="2"
-              />
+          <div class="card_main">
+            <div class="cart_card_description">
+              <a href="#">
+                <p class="cart_card_description_name">
+                  MANGO PEOPLE <br />
+                  T-SHIRT
+                </p></a
+              >
+              <p class="cart_card_description_info">
+                Prise: <span class="pink_text"> $300</span>
+              </p>
+              <p class="cart_card_description_info">Color: red</p>
+              <p class="cart_card_description_info">Size: XL</p>
+              <div class="cart_card_description_info description_quantity">
+                <label for="items_quantity_1">Quantity:</label>
+                <input
+                  class="description_number"
+                  type="number"
+                  min="1"
+                  id="items_quantity_1"
+                  name="Quantity"
+                  value="2"
+                />
+              </div>
             </div>
-          </div>
-          <div class="card_close">
-            <img src="img/close_img.svg" alt="close" />
+            <div class="card_close">
+              <img src="img/close_img.svg" alt="close" />
+            </div>
           </div>
         </div>
 
         <div class="cart_card">
           <img class="cart_card_image" src="img/cart_image.png" alt="item" />
-          <div class="cart_card_description">
-            <a href="#"
-              ><p class="cart_card_description_name">
-                MANGO PEOPLE <br />
-                T-SHIRT
-              </p></a
-            >
-            <p class="cart_card_description_info">
-              Prise: <span class="pink_text"> $300</span>
-            </p>
-            <p class="cart_card_description_info">Color: red</p>
-            <p class="cart_card_description_info">Size: XL</p>
-            <div class="cart_card_description_info description_quantity">
-              <label for="items_quantity_2">Quantity:</label>
-              <input
-                class="description_number"
-                type="number"
-                min="1"
-                id="items_quantity_2"
-                name="Quantity"
-                value="2"
-              />
+          <div class="card_main">
+            <div class="cart_card_description">
+              <a href="#"
+                ><p class="cart_card_description_name">
+                  MANGO PEOPLE <br />
+                  T-SHIRT
+                </p></a
+              >
+              <p class="cart_card_description_info">
+                Prise: <span class="pink_text"> $300</span>
+              </p>
+              <p class="cart_card_description_info">Color: red</p>
+              <p class="cart_card_description_info">Size: XL</p>
+              <div class="cart_card_description_info description_quantity">
+                <label for="items_quantity_2">Quantity:</label>
+                <input
+                  class="description_number"
+                  type="number"
+                  min="1"
+                  id="items_quantity_2"
+                  name="Quantity"
+                  value="2"
+                />
+              </div>
             </div>
-          </div>
-          <div class="card_close">
-            <img src="img/close_img.svg" alt="close" />
+            <div class="card_close">
+              <img src="img/close_img.svg" alt="close" />
+            </div>
           </div>
         </div>
 
@@ -174,7 +179,7 @@
           </form>
         </div>
       </section>
-      <section class="footer center">
+      <section class="footer_bottom center">
         <div class="footer_copyright">
           <p class="text_copyright">&copy; 2021 Brand All Rights Reserved.</p>
         </div>

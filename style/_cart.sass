@@ -8,10 +8,11 @@
     flex-direction: column
     width: 650px
 
+
 .cart_card
     margin-bottom: 40px
     display: flex
-    width: 650px
+    max-width: 650px
     height: 306px
     box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13)
 
@@ -24,10 +25,11 @@
         width: 262px
     
     &_description 
-        width: 260px
+        max-width: 260px
         display: flex
         flex-direction: column
         margin: 30px
+        
 
         &_name 
             +font_midle_headings(400)
@@ -56,11 +58,18 @@
     text-align: center
     outline: none
 
+.card_main
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+
 .card_close 
     margin: 30px
+    
 
 .cart_choice 
-    margin-top: 72px
+    margin-top: 32px
     +spaceFlex()
     text-align: center
 
@@ -186,4 +195,99 @@
         -webkit-animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
 	        animation: shadow-drop-2-center 0.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
 
+
+@media (max-width: 1023px)
+    .cart_container 
+        margin-top: 59px
+        margin-bottom: 128px
+        +columnFlex()
+
+    .cart_choice 
+        margin: 22px 16px 50px 16px
+        
+
+    .cart_card
+        max-width: 730px
+        width: 100%
+
+        &_description 
+            max-width: 340px
+
+    .cart_items
+        width: 100%
+        justify-content: center
+        align-items: center
+        padding-left: 16px
+        padding-right: 16px
+        
+    .cart_info 
+        flex-direction: row
+        width: 100%
+        padding-left: 16px
+        padding-right: 16px
+        margin-left: 0
+
+    .cart_contact
+        flex-grow: 1
+
+    .cart_checkout
+        margin-top: 50px
+        margin-left: 15px
+
+    .choice_button:first-child
+        margin-right: 48px
+    
+
+@media (max-width: 667px)
+    .cart_container
+        margin-bottom: 96px
+        margin-top: 39px
+
+    .cart_items
+        padding-left: 8px
+        padding-right: 8px
+
+    .cart_card
+        margin-bottom: 30px
+        height: 190px
+        &_description
+            margin: 15px
+            &_name 
+                font-size: 16px
+                line-height: 19px
+                margin-bottom: 25px
+            &_info
+                font-size: 14px
+                line-height: 17px
+        &_image
+            width: 170px
+    .description_number 
+        font-size: 10px
+        line-height: 12px
+
+
+    .cart_choice 
+        margin: 0px 0px 32px 0px
+        width: 100%
+    
+    .choice_button
+        width: 175px
+        height: 35px
+        font-size: 12px
+        line-height: 14px
+
+    .cart_info
+        +columnFlex()
+
+    .cart_contact
+        width: 100%
+
+    .cart_checkout
+        margin: 30px 8px 0 8px
+
+    .card_close 
+        margin: 12px 12px 0 0
+    .card_close img
+        width: 10px
+        height: 10px
 

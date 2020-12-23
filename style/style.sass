@@ -249,6 +249,9 @@ a
   +spaceFlex()
   background-color: $colorMain
  
+.footer_bottom 
+  +spaceFlex()
+  background-color: $colorMain
 
 .footer_column 
   +columnFlex()
@@ -401,3 +404,123 @@ a
 
 // Animation
 @import animation
+
+@media (max-width: 1080px)
+  .card_main_gallery:nth-child(9)
+    display: none
+
+
+@media (max-width: 1023px)
+  .main_menu
+    padding: 0 30px
+
+  .main_view
+    height: 363px
+
+  .popular_deal
+    margin: 20px 16px
+
+  .big_deal
+    margin: 0 16px
+
+  .gallery_introduction
+    margin: 154px 16px 72px 16px
+
+  .allProducts_button 
+    margin-bottom: 65px
+    margin-top: 32px
+
+  .deals_card:not(:last-child)
+    margin-right: 20px
+
+  .card_main_gallery
+    margin-right: 16px
+
+  .margin_bottom_card
+    margin-bottom: 16px
+
+  .footer
+    +columnFlex()
+    padding-top: 24px
+    padding-bottom: 40px
+
+  .footer_column
+    width: 360px
+    margin: 24px 0
+
+  .footer_subscribe 
+    +columnFlex()
+    height: 614px
+    padding-top: 55px
+    padding-bottom: 140px
+
+  .subscribe_feedback
+    margin-bottom: 48px
+
+  .footer_bottom
+    padding: 0 30px
+
+
+
+@media (max-width: 667px)
+  .main_menu
+    padding: 0 16px
+
+  .hidden_mobile
+    display: none
+    visibility: hidden
+
+  .main_info
+    width: 100%
+    justify-content: center
+
+  .pink_block 
+    height: 61px
+    margin-left: 0
+
+  .main_header
+    font-size: 38px
+    line-height: 46px
+
+  .main_paragraph 
+    font-size: 20px
+    line-height: 24px
+
+  .popular_deal
+    +columnFlex()
+    margin: 64px 16px 0 16px
+
+  .deals_card
+    margin: 0 16px 32px 16px
+
+  .card_main_gallery
+    margin-right: 8px
+
+  .gallery_introduction
+    margin: 64px 16px 64px 16px
+
+  .allProducts_button 
+    margin-bottom: 96px
+    margin-top: 41px
+
+  .footer
+    padding-bottom: 56px
+
+  .footer_subscribe 
+    padding-bottom: 110px
+
+  .subscribe_feedback
+    margin-bottom: 60px
+
+  .footer_bottom
+    display: flex
+    justify-content: center
+    flex-direction: column-reverse
+    align-items: center
+
+  .footer_copyright 
+    margin: 25px 0
+
+  .footer_social_media 
+    margin-top: 42px
+
