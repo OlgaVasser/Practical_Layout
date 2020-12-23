@@ -27,7 +27,7 @@
   +columnFlex()
   margin: 0 auto
   position: relative
-  width: 1140px
+  max-width: 1140px
   border: 1px solid $colorInput
   margin-top: -65px
   z-index: 2
@@ -72,12 +72,13 @@
   display: flex
   justify-content: center
   align-items: center
-
   position: relative
 
 .checkbox_for_product_card 
+  
 
 .choice_for_product_category 
+  display: flex
   +font_regular(400)
   color: $colorBasic
   outline: none
@@ -124,3 +125,58 @@
   +spaceFlex()
   flex-wrap: wrap
   margin: 128px 0
+
+
+@media (max-width: 1023px)
+  .product_slider_show 
+    height: 624px
+
+  .about_product_card 
+    z-index: 1
+    margin-top: 0
+
+  .product_gallery 
+    padding-left: 16px
+
+  .hidden_tablet
+    display: none
+    visibility: hidden
+
+
+@media (max-width: 667px)
+  .about_product_card 
+    max-width: 100%
+   
+
+  .product_card_description
+    max-width: 375px
+    padding-right: 25px
+    padding-left: 25px
+
+  .product_card_name
+    margin-bottom: 32px
+
+  .product_card_line 
+    width: 174px
+    margin-top: 32px
+    margin-bottom: 50px
+
+  .product_card_filter
+    margin-left: 30px
+    margin-right: 7px
+
+  .choice_for_product_category
+    font-size: 10px
+    line-height: 12px
+
+  .product_gallery 
+    padding-left: 8px
+    margin-bottom: 64px
+    margin-top: 64px
+    justify-content: space-around
+
+  .product_button 
+    margin-top: 64px
+    
+
+
