@@ -200,7 +200,7 @@
     margin-right: 0
 
   .catalog_gallery 
-    padding-left: 16px
+    margin-left: 16px
 
   .numbering_block 
     margin-top: 40px
@@ -208,12 +208,14 @@
 
 
 @media (max-width: 667px)
+  .catalog_gallery 
+    padding-left: 8px
 
   .catalog_title
     +columnFlex()
 
-  .heading_catalog_title
-    margin-bottom: 32px
+  .breadcrumbs
+    margin-top: 32px
 
   .filter_catalog
     padding-left: 8px
@@ -228,6 +230,10 @@
 
   .filter_block_right 
     padding-right: 8px
+    margin-left: 0
+
+  .checkbox_for_right_menu
+    margin-right: 6px
 
   .right_menu_category, .clients_choise, .filter_catalog
     font-size: 12px

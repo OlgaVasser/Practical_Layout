@@ -79,4 +79,36 @@
     background: url(../img/check_mark.svg) no-repeat 0 4px
     padding-left: 48px  
 
+
+@media (max-width: 1023px)
+    .registration_container 
+        margin: 40px 16px 96px 16px
+
+    .registration_form
+        width: 50%
+
+    .registration_info
+        margin-left: 22px
+        width: 50%
+        +font_mini_headings(300)
+
+    .info_heading
+        +font_mini_headings(300)
           
+@media (max-width: 667px)
+    .registration_container
+        +columnFlex()
+        margin-right: 9px
+        margin-left: 9px
+
+    .registration_form
+        width: 100%
+
+    .registration_info
+        width: 100%
+        margin-top: 40px    
+
+    
+
+
+
