@@ -17,41 +17,99 @@ a
   padding-right: calc(50% - 570px)
 
 .main_menu 
-    +spaceFlex()
-    background-color: $colorMain
-    height: 75px
-    align-items: center
-
+  +spaceFlex()
+  background-color: $colorMain
+  height: 75px
+  align-items: center
+  position: relative
 
 .menu_search 
   margin-left: 41px
-
 
 .menu_account 
   margin-left: 34px
   margin-right: 33px
 
+#switcher 
+  position: absolute
+  left: -88888888px
+  visibility: hidden
+  &:checked ~ .drop
+    opacity: 1
+    visibility: visible
+    
+.drop
+  background: $colorHover
+  box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+  padding: 37px 32px
+  position: absolute
+  top: 75px
+  right: 0
+  opacity: 0
+  visibility: hidden
+  width: $widthMenu
+  height: 768px
+  transition: opacity .4s
+  z-index: 3
+
+  &_box
+    margin-top: 20px
+
+  &_name
+    +font_regular(700)
+    color: $colorBasicBlack
+
+  &_category
+    +font_regular(400)
+    color: $colorSelect
+    &:hover
+      text-decoration: underline
+
+  &_list
+    margin-top: 12px
+    list-style-type: none
+    padding-left: 20px  
+
+  &_link
+    color: $colorBasic
+    +font_regular(400)
+    display: block
+    margin-bottom: 11px
+    &:hover
+      color: $colorSelect
+
+.right_menu
+  display: flex
+  align-items: center
+
+.header_box
+  display: block
+  &_nav
+    display: none
 
 .main_view 
   background-color: rgba(113, 103, 105, 0.08)
   display: flex
-  width: 100%
-  height: 764px
+  padding-right: calc(50% - 800px)
+  padding-left: calc(50% - 800px)
 
 .main_view:hover 
   filter: brightness(50%)
 
 .main_image 
   width: 50%
-  padding-left: calc(50% - 800px)
+  
 
-
+.main_image img
+  width: 100%
+  height: 100%
+  
 .main_info 
   width: 50%
   background-color: $backgroundTitle
   display: flex
   align-items: center
-  padding-right: calc(50% - 800px)
+  
   &:hover .main_header
     -webkit-animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
 	          animation: tracking-in-expand 1.5s cubic-bezier(0.215, 0.610, 0.355, 1.000) both
@@ -156,6 +214,7 @@ a
 .gallery_paragraph 
   +font_regular(400)
   color: $colorBorder
+  text-align: center
 
 
 .main_gallery 
@@ -291,7 +350,7 @@ a
   margin-bottom: 40px
 
 .subscribe_feedback 
-  width: 360px
+  max-width: 360px
   font-weight: 400
   font-size: 20px
   line-height: 24px
@@ -411,11 +470,23 @@ a
 
 
 @media (max-width: 1023px)
+  .center
+    padding: 0 calc( 50% - 390px)
+ 
+
   .main_menu
     padding: 0 30px
 
-  .main_view
-    height: 363px
+  .main_header
+    font-size: 44px
+    line-height: 52px
+
+  .main_paragraph 
+    font-size: 24px
+    line-height: 28px
+  
+  .pink_block 
+    height: 92px
 
   .popular_deal
     margin: 20px 16px
@@ -424,7 +495,7 @@ a
     margin: 0 16px
 
   .gallery_introduction
-    margin: 154px 16px 72px 16px
+    margin: 72px 16px
 
   .allProducts_button 
     margin-bottom: 65px
@@ -466,6 +537,26 @@ a
   .main_menu
     padding: 0 16px
 
+  .drop
+    width: 100%
+    
+  .header_box
+    display: none
+    &_nav
+      padding: 0 16px 16px
+      display: flex
+      justify-content: space-around
+ 
+  .menu_account path    
+    fill: $colorMain
+    &:hover
+      fill: $colorSelect
+
+  .menu_cart path    
+    fill: $colorMain
+    &:hover
+      fill: $colorSelect
+
   .hidden_mobile
     display: none
     visibility: hidden
@@ -473,6 +564,7 @@ a
   .main_info
     width: 100%
     justify-content: center
+    min-height: 360px
 
   .pink_block 
     height: 61px
@@ -496,6 +588,12 @@ a
   .card_main_gallery
     margin-right: 8px
 
+  .big_deal
+      height: 111px
+      background-image: url("../img/accesories.png")
+      &_image
+        display: none
+
   .gallery_introduction
     margin: 64px 16px 64px 16px
 
@@ -507,10 +605,15 @@ a
     padding-bottom: 56px
 
   .footer_subscribe 
-    padding-bottom: 110px
+    padding: 0 16px 110px 16px
+
+  .subscribe_column
+    width: 100%
+    padding-top: 56px
 
   .subscribe_feedback
-    margin-bottom: 60px
+    margin-bottom: 0
+
 
   .footer_bottom
     display: flex
